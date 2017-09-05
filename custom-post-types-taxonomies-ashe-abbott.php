@@ -1,21 +1,24 @@
 <?php
 
 /*
-Plugin Name: Custom Post Types + Taxonomies
+
+Plugin Name: Custom Post Types and Taxonomies (Ashe Abbott)
 Plugin URI:  https://github.com/asheabbott/wordpress-custom-post-types-taxonomies.git
 Description: Lightweight plugin to add custom post types and taxonomies. Create custom post types and taxonomies in plugin code.
-Version:     1.0
+Version:     1.1
 Author:      Ashe Abbott
 Author URI:  http://ashe.xyz
+
 */
 
-// custom taxonomies
+// TAXONOMIES
 
 add_action( 'init', 'custom_taxonomies' );
 
 function custom_taxonomies() {
 
-    // create hierarchical taxonomy (like categories)
+    // for hierarchical taxonomies (like categories)
+
     register_taxonomy(
         'project-type',
         'portfolio',
@@ -40,7 +43,8 @@ function custom_taxonomies() {
         )
     );
 
-    // create non-hierarchical taxonomy (like tags)
+    // for non-hierarchical taxonomy (like tags)
+
     register_taxonomy(
         'project-attribute',
         'portfolio',
@@ -67,7 +71,7 @@ function custom_taxonomies() {
 
 }
 
-// custom post types
+// POST TYPES
 
 add_action( 'init', 'custom_post_types' );
 
@@ -98,6 +102,8 @@ function custom_post_types() {
             'has_archive' => true
         )
     );
+
+    // dashicon codes for menu icons are here: https://developer.wordpress.org/resource/dashicons
 
 }
 

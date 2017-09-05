@@ -2,9 +2,9 @@
 
 It is best practice to include custom post types and taxonomies in a plugin, rather than in functions.php, and that's exactly what this plugin does. There is no UI -- just adjust the plugin code to suit your needs.
 
-### Includes
+## Includes
 
-custom-post-types-taxonomies.php, which contains examples for setting up a hierarchical taxonomy, a non-hierarchical taxonomy and a custom post type, including labels, dashicons, etc.
+custom-post-types-taxonomies-ashe-abbott.php, which contains examples for setting up a hierarchical taxonomy, a non-hierarchical taxonomy and a custom post type, including labels, dashicons, etc.
 
 ## How To Use
 
@@ -12,7 +12,14 @@ custom-post-types-taxonomies.php, which contains examples for setting up a hiera
 * Activate plugin.
 * Code away! Add, change and remove custom post types and taxonomies as needed.
 
-### Changelog
+## Changelog
 
-####v1.0
+### Potential Roadmap for Future Updates
+* Develop UI?
+
+### v1.1
+* Revised and added some comments
+* Changed main php file name so as not to trigger unsupported plugin warning on WordFence; updated plugin name to match
+
+### v1.0
 Initial commit.
