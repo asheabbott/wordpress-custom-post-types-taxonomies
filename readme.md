@@ -17,6 +17,9 @@ custom-post-types-taxonomies-ashe-abbott.php, which contains examples for settin
 ### Potential Roadmap for Future Updates
 * Develop UI?
 
+### v1.2
+* Added `'show_in_rest' => true` to custom post type to enable block editor support
+
 ### v1.1
 * Revised and added some comments
 * Changed main php file name so as not to trigger unsupported plugin warning on WordFence; updated plugin name to match

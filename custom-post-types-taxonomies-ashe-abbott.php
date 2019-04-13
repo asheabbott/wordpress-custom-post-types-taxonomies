@@ -99,6 +99,7 @@ function custom_post_types() {
             'menu_position' => 5,
             'menu_icon' => 'dashicons-art',
             'supports' => array('title','editor','thumbnail','excerpt','revisions'),
+            'show_in_rest' => true,
             'has_archive' => true
         )
     );
